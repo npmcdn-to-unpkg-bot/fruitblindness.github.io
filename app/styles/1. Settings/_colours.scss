@@ -1,0 +1,28 @@
+//Colour Variables
+
+$cinder : #191724;
+$tundora : #4C4547;
+$spicy : #8C594E;
+$spicier: #732937;
+$sienna : #D18952;
+$texasrose : #FDB157;
+
+$section-background-colours: $sienna, $cinder, $spicy, $tundora;
+$section-text-colours: $cinder, $sienna, $cinder, $sienna;
+$section-link-colours: $spicy, $spicy, $texasrose, $texasrose;
+
+$color-lightgrey:       #eee;                          // a default light grey
+$color-lightgrey-light: lighten($color-lightgrey, 5%); // a default light grey - lighter
+$color-lightgrey-dark:  darken($color-lightgrey, 5%);  // a default light grey - darker
+ 
+$color-midgrey:         #bbb;                          // a default mid grey
+$color-midgrey-light:   lighten($color-midgrey, 5%);   // a default mid grey - lighter
+$color-midgrey-dark:    darken($color-midgrey, 5%);    // a default mid grey - darker
+ 
+$color-darkgrey:        #85898a;                       // a default dark grey
+$color-darkgrey-light:  lighten($color-darkgrey, 5%);  // a default dark grey - lighter
+$color-darkgrey-dark:   darken($color-darkgrey, 5%);   // a default dark grey - darker
+ 
+$color-white: #fff; // a default white
+$color-black: #111; // a default black
+
