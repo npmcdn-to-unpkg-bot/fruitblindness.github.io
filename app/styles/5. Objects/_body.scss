@@ -14,8 +14,9 @@
     @include media($desktop) {
         position: relative;
         width: 100%;
-        padding: 3vw 8vw 3vw 15%;
+        padding: 3vw 8vw 3vw calc(150px + 3vw);
         min-height: 100vh;
+        max-height: 100vw;
 
         @for $i from 1 through length($section-background-colours) {
 

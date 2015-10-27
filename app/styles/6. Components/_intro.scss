@@ -27,121 +27,52 @@
 	.lead-in {
 		color: $texasrose;
 		font-family: $exo;
-		padding-top: 1.5vw;
 		text-decoration: none;
 		position: relative;
 		z-index: 999;
-		margin-top: 10%;
-		left: 47%;
-		display: inline-block;
+		margin-top: 5.5%;
+    padding-top: 3%;
+    text-indent: 1%;
+    left: 47%;
+    display: inline-block;
+    height: 10vw;
+    width: 14vw;
+    clip-path: polygon(100% 45%, 0 45%, 50% 100%);
+    -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
 		font-size: 1.5vw;
 		transition: 0.5s margin-top ease-out;
 		text-align: center;
+		background: $spicier;
+		transition: 0.5s all ease-out;
+		overflow: hidden;
+
 
 		&:before {
 			content: '';
-			height: 5vw;
-			width: 15vw;
-			display: block;
-			clip-path: polygon(50% 100%, 0 0, 100% 0);
-			background: linear-gradient(135deg, rgba(darken($spicy,10%), 0.1) 0%,darken($spicy,2%) 48%, $spicy 55%,rgba(lighten($spicy, 5%), 0) 100%); /* W3C */;
 			position: absolute;
-			z-index: -99;
-			opacity: 0.3;
-			top: -120%;
-			left: 50%;
-			transform: rotate(-158deg);
+			display: block;
+			top: -50%;
+			width: 10vw;
+			right: auto;
+			bottom: -50%;
+			left: -15vw;
+		  background: linear-gradient(to right, rgba(229, 172, 142, 0), rgba(255,255,255,0.1) 50%, rgba(229, 172, 142, 0));
 			transition: 0.5s all ease-out;
-		}
-
-		&:after {
-			content: '';
-			height: 18vw;
-			width: 25vw;
-			display: block;
-			clip-path: polygon(30% 100%, 20% 0, 90% 0);
-			background: linear-gradient(135deg, rgba(darken($spicier,10%), 0.1) 0%,darken($spicier,2%) 48%, $spicier 55%,rgba(lighten($spicier, 5%), 0) 100%); /* W3C */;
-			position: absolute;
-			z-index: -99;
-			opacity: 0.4;
-		    top: -215%;
-		    left: -5%;
-		    transform: rotate(-108deg) scaleX(1);
-		    transition: 0.5s all ease-out;
 		}
 
 		&:hover {
-			text-indent: -99999em;
-			margin-top: 10%;
-			&:before {
-				height: 11vw;
-				width: 7vw;
-				top: -94%;
-			    left: 50%;
-				transform: rotate(0deg) scaleY(1);
-				transform-origin: 20% 40%;
-			}
+			color: transparent;
+			// text-indent: -99999em;
+			transform: scale(0.7);
+			transform-origin: 50% 80%;
+			background: darken($spicier, 5%);
 
-			&:after {
-				height: 13vw;
-				width: 14vw;
-				top: -134%;
-				left: 34%;
-				transform: rotate(0deg) scale(0.8);
-			}
-			.continue {
-				&:before {
-					height: 11vw;
-					width: 12vw;
-					top: -95%;
-					left: 12%;
-					transform: rotate(180deg) scaleY(-1);
-				}
-				&:after {
-					text-indent: 2.3rem;
-					top: -.5vw;
-					left: 0;
-					opacity: 1;
-					display: block;
-					width: 12vw;
-					text-align: center;
-				}
+			&:before {
+				left: 15vw;
 			}
 		}
 	}
-	.continue {
-		z-index: -1;
-		overflow: hidden;
-		transition: 0.5s ease-out all;
-
-		&:before {
-			content: '';
-			height: 9vw;
-			width: 12vw;
-			display: block;
-			clip-path: polygon(50% 100%, 0 0, 100% 0);
-			background: linear-gradient(135deg, rgba(darken($spicy,10%), 1) 0%,darken($spicy,2%) 20%,rgba(lighten($spicy, 5%), 0.2) 100%); /* W3C */;
-			position: absolute;
-			z-index: -99;
-			opacity: 0.45;
-		    top: 0;
-		    left: -34%;
-			transform: rotate(128.5deg) scaleY(-1);
-			transition: 0.5s all ease-out;
-		}
-
-		&:after {
-			content: "Let's go.";
-			opacity: 0;
-			text-indent: -9999em;
-			position: absolute;
-		}
-
-		// &:hover {
-		// 	&:before {
-		// 		transition: 0.5s ease-out all;
-		// 		opacity: 1;
-		// 	}
-		// }
+	@include media($desktoplarge) {
+		font-size: 2rem;
 	}
 }

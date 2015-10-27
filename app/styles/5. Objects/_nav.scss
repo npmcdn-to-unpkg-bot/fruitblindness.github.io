@@ -62,15 +62,43 @@
   }
 
   &+.menu-item {
+
+    .link {
+      &:after {
+        content: '';
+        display: block;
+        background: $tundora;
+        width: 1.5rem;
+        height: 2.5rem;
+        left: 1rem;
+        top: -1rem;
+        position: absolute;
+      }
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      background: $cinder;
+      position: absolute;
+      top: -.66rem;
+      border-radius: 50%;
+      width: 1.2rem;
+      height: 1.3rem;
+      left: 2.05rem;
+      z-index: 999;
+    }
     &:after {
       content: '';
       display: block;
-      background: $tundora;
-      width: .5vw;
-      height: 4rem;
-      left: 1.55rem;
-      top: -2rem;
+      background: $cinder;
       position: absolute;
+      top: -.66rem;
+      border-radius: 50%;
+      width: 1.2rem;
+      height: 1.3rem;
+      left: .25rem;
+      z-index: 999;
     }
   }
 
