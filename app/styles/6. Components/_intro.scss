@@ -31,20 +31,26 @@
 		position: relative;
 		z-index: 999;
 		margin-top: 5.5%;
-    padding-top: 3%;
-    text-indent: 1%;
+    padding-top: 1.2rem;
+    text-indent: .3rem;
     left: 47%;
     display: inline-block;
     height: 10vw;
+		max-height: 150px;
     width: 14vw;
+		max-width: 180px;
     clip-path: polygon(100% 45%, 0 45%, 50% 100%);
     -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
-		font-size: 1.5vw;
+		font-size: 1.3vw;
 		transition: 0.5s margin-top ease-out;
 		text-align: center;
 		background: $spicier;
 		transition: 0.5s all ease-out;
 		overflow: hidden;
+
+		@include media($desktoplarge) {
+			font-size: 1.3rem;
+		}
 
 
 		&:before {
