@@ -114,6 +114,16 @@
   }
 }
 
+.blog.icon {
+  position: absolute;
+  fill: $texasrose;
+  left: 1.2rem;
+  top: -.2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  z-index: 999;
+}
+
 .active {
     display: block;
     border-radius: 50%;
