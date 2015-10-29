@@ -61,7 +61,7 @@
     }
   }
 
-  &+.menu-item {
+  &+.menu-item:not(.menu-item--blog) {
 
     .link {
       &:after {

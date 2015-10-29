@@ -135,6 +135,19 @@ if (typeof jQuery === 'undefined') {
       .parents('li')
       .addClass('visible')
 
+      // Amount to move active glob by
+      var dest=(active.index())*spacing;
+
+      // Move active glob
+      TweenMax.to($current.data("pos"),0.6,{
+        y:startPos+dest,
+        onUpdate:updatePos,
+        onComplete:updatePos,
+        ease:Expo.easeOut
+        // ease:Elastic.easeOut,
+        // easeParams:[1.1,0.6]
+      });
+
     if (active.parent('.dropdown-menu').length) {
       active = active
         .closest('li.dropdown')

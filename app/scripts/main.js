@@ -1,5 +1,5 @@
 // Variable for static dots
-var $dots=$(".menu-item")
+var $dots=$(".menu-item:not(.menu-item--blog)")
 // movable glob
 ,$current=$(".active")
 
@@ -47,6 +47,13 @@ $(document).ready(function(){
 			alignIntro();
 	}
 
+	$("a[href*='#']").click(function() {
+        $("html, body").animate({
+            scrollTop: $($.attr(this, "href")).offset().top
+        }, 500);
+        return false;
+    })
+
 	$(window).resize(function() {
       if(this.resizeTO) clearTimeout(this.resizeTO);
       this.resizeTO = setTimeout(function() {
@@ -58,30 +65,38 @@ $(document).ready(function(){
     alignIntro();
 	});
 
+	$('section:not(:first)').each(function(){
+		var mainHeaderLength = $(this).find('h2').outerWidth(),
+		subHeaderLength = $(this).find('h3').outerWidth();
+
+		mainHeaderLength > subHeaderLength ? null : $(this).find('h2').outerWidth(subHeaderLength);
+
+	});
+
 	// Reset active glob to startPos
 	$current.data("pos",{y:startPos});
 
 	//When dot clicked
-	$dots.click(function(event){
-		var $cur=$(this);
-
-		// Amount to move active glob by
-		var dest=($cur.index())*spacing;
-
-		console.log(startPos);
-		console.log(spacing);
-		console.log(dest);
-
-		// Move active glob
-		TweenMax.to($current.data("pos"),0.6,{
-			y:startPos+dest,
-			onUpdate:updatePos,
-			onComplete:updatePos,
-			ease:Expo.easeOut
-			// ease:Elastic.easeOut,
-			// easeParams:[1.1,0.6]
-		});
-	});
+	// $dots.click(function(event){
+	// 	var $cur=$(this);
+	//
+	// 	// Amount to move active glob by
+	// 	var dest=($cur.index())*spacing;
+	//
+	// 	console.log(startPos);
+	// 	console.log(spacing);
+	// 	console.log(dest);
+	//
+	// 	// Move active glob
+	// 	TweenMax.to($current.data("pos"),0.6,{
+	// 		y:startPos+dest,
+	// 		onUpdate:updatePos,
+	// 		onComplete:updatePos,
+	// 		ease:Expo.easeOut
+	// 		// ease:Elastic.easeOut,
+	// 		// easeParams:[1.1,0.6]
+	// 	});
+	// });
 
 	// Simulate click on first dot to position
 	$dots.eq(0).click();

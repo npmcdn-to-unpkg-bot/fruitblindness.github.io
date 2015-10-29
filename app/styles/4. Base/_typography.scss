@@ -4,13 +4,26 @@ html, body {
 }
 
 // Header Styles
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
 	font-family: $chunkfive;
+}
+
+h3, h4, h5, h6 {
+	font-family: $exo;
+	font-weight: normal;
 }
 
 .section .header {
 	> h2 {
-		font-size: 2.5rem;
+		font-size: 2.8rem;
+		margin-bottom: 0;
+		padding-bottom: .05rem;
+    display: inline-block;
+	}
+	> h3 {
+		margin-top: 0;
+		padding-top: .25rem;
+		display: inline-block;
 	}
 }
 
@@ -20,4 +33,3 @@ p.superscript {
 	line-height: .8rem;
 	margin-top: -.3rem;
 }
-

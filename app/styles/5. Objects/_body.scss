@@ -14,7 +14,7 @@
     @include media($desktop) {
         position: relative;
         width: 100%;
-        padding: 3vw 8vw 3vw calc(150px + 3vw);
+        padding: 2.2vw 8vw 3vw calc(150px + 3vw);
         min-height: 100vh;
         max-height: 100vw;
 
@@ -30,6 +30,10 @@
 
                 a {
                     color: $link-colour;
+                }
+
+                h2 {
+                  border-bottom: 1px solid $text-colour;
                 }
             }
         }
