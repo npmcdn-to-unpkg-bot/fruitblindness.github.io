@@ -1,0 +1,183 @@
+.section.four {
+  .biog {
+    @include span-columns(6);
+    line-height: 1.35;
+    font-size: 1.15vw;
+  }
+  .profile {
+    @include span-columns(5);
+    @include shift(0.5);
+    height: 100%;
+    // background: $spicy;
+    border: .2vw solid $spicy;
+    padding: 1.5vw;
+    margin-top: 8.35vw;
+    font-size: 1.15vw;
+    position: relative;
+    font-family: $exolight;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -3vw;
+      right: -2.3vw;
+      height: 0;
+      width: 0;
+      border-right:  10vw solid $spicy;
+      border-top: 4vw solid transparent;
+      border-bottom: 4vw solid transparent;
+      display: block;
+      transform: scale(1.2) rotate(30deg);
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 1.1vw;
+      right: -7.4vw;
+      height: 0;
+      width: 0;
+      border-right: 7vw solid $cinder;
+      border-top: 2vw solid transparent;
+      border-bottom: 4vw solid transparent;
+      display: block;
+      transform: scale(-1.2) rotate(-89.5deg);
+      opacity: 0.5;
+    }
+
+      h3 {
+        &:first-of-type {
+          &:before {
+            content: '';
+            position: absolute;
+            top: -2.4vw;
+            right: 4.68vw;
+            height: 0;
+            width: 0;
+            border-right: 7vw solid $spicier;
+            border-top: 2vw solid transparent;
+            border-bottom: 4vw solid transparent;
+            display: block;
+            transform: scale(-1.2) rotate(-117.5deg) skewX(120deg);
+            opacity: 1;
+          }
+        }
+      }
+
+    h3 {
+      padding-bottom: .5vw;
+      margin-bottom: 0;
+      margin-top: 0;
+      // border-bottom: .2vw solid $spicy;
+    }
+
+    .image-wrapper {
+      clip-path: polygon(0 0, 100% 100%, 100% 0);
+      overflow: hidden;
+      height: 12vw;
+      width: 12vw;
+      position: absolute;
+      right: -5vw;
+      top: -6.3vw;
+      // border: .2vw solid $spicy;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      // transform: rotate(30deg);
+      position: absolute;
+    }
+
+    ul {
+      @extend %reset-ul;
+      padding-left: 1.5vw;
+
+      strong {
+        font-family: $exobold;
+      }
+
+      &+h3 {
+        margin-top: 1vw;
+        border-top: .2vw solid $spicy;
+        padding-top: .5vw;
+      }
+
+      li {
+        position: relative;
+        &:before {
+          content: '';
+          @extend %vertical-align;
+          height: 0;
+          width: 0;
+          border-left: .7vw solid $spicy;
+          border-top: .5vw solid transparent;
+          border-bottom: .5vw solid transparent;
+          display: block;
+          // background: $spicy;
+          left: -1.5vw;
+          // clip-path: polygon(18% 0, 0% 100%, 100% 100%);
+        }
+
+        @for $i from 1 through 6 {
+          &:nth-of-type(#{$i}) {
+            &:before {
+              transform: translateY(-50%) rotate(random(360) + deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    @include span-columns(5);
+    @include shift(0.5);
+    background: $spicy;
+    padding: 1.5vw;
+    margin-top: 2vw;
+    font-size: 1.15vw;
+
+    h3 {
+      margin: 0;
+      padding-bottom: 0.5vw;
+    }
+
+      .contact-options {
+        padding-top: 1vw;
+        @extend %reset-ul;
+
+        li {
+          float: left;
+          @include span-columns(4);
+          text-align: center;
+          position: relative;
+
+          // &:before {
+          //   content: '';
+          //   height: 0;
+          //   width: 0;
+          //   top: 1vw;
+          //   position: absolute;
+          //   border-bottom: 5.6vw $cinder solid;
+          //   border-left: 4vw transparent solid;
+          //   border-right: 4vw transparent solid;
+          //   left: 50%;
+          //   transform: translateX(-50%);
+          // }
+
+          span {
+            z-index: 10;
+            position: relative;
+          }
+
+          svg {
+            position: relative;
+            z-index: 10;
+            fill: $texasrose;
+            width: 4vw;
+            height: 4vw;
+          }
+        }
+      }
+  }
+}

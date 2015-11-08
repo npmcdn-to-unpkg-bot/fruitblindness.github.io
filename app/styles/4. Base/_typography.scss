@@ -1,11 +1,12 @@
 html, body {
-	font-family: $exolight;
+	font-family: $exo;
 	-webkit-font-smoothing: antialiased;
 }
 
 // Header Styles
 h1, h2 {
 	font-family: $chunkfive;
+	margin-top: 1.5rem;
 }
 
 h3, h4, h5, h6 {
@@ -15,13 +16,14 @@ h3, h4, h5, h6 {
 
 .section .header {
 	> h2 {
-		font-size: 2.8rem;
+		font-size: 2.8vw;
 		margin-bottom: 0;
 		padding-bottom: .05rem;
     display: inline-block;
 	}
 	> h3 {
 		margin-top: 0;
+		font-size: 1.4vw;
 		padding-top: .25rem;
 		display: inline-block;
 	}
