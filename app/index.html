@@ -15,6 +15,13 @@
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.3.15/slick.css" />
+
+  <script src="jspm_packages/system.js"></script>
+  <script src="config.js"></script>
+  <script>
+    System.import('scripts/portfolio');
+  </script>
 
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="/bower_components/modernizr/modernizr.js"></script>
@@ -53,7 +60,7 @@
         </header>
         <div class="introduction">
           <p>I'm a Front-end Developer, UI craftsman and displaced Northerner currently based in Bristol*.</p>
-          <p>This is a catalogue of my professional and personal interests, including the obvious web design &amp; development, a smattering of graphic design and fine art type things and probably no shortage of irreverent nonsense speak. That's kind of my thing. That and this sweet stag motif.</p>
+          <p>This is a catalogue of my professional and personal interests, including the obvious web design &amp; development, a smattering of graphic design and fine art type things and probably no shortage of irreverent nonsense speak. That's kind of my thing.</p>
           <p class="superscript">*People sure do talk funny down here.</p>
         </div>
         <a href="#section-two" class="lead-in">Interested?<span class="continue">&nbsp;</span></a>
@@ -65,6 +72,7 @@
           <h2 class="title">Digital</h2> <br />
           <h3 class="sub-title">The Day Job</h3>
         </header>
+        <div id="portfolio-app"></div>
       </section>
 
       <!--Art section-->
@@ -73,7 +81,7 @@
           <h2 class="title">Art</h2> <br />
           <h3 class="sub-title">The Lifelong Hobby</h3>
         </header>
-        <div class="introduction"></div>
+        <div id="art-app"></div>
       </section>
 
       <!--About section-->
@@ -103,7 +111,7 @@
                 <li>Basically tying my shoelaces with JavaScript</li>
               </ul>
             </div>
-            <div class="contact">
+            <!-- <div class="contact">
               <h3>Contact:</h3>
               If you have a burning desire to get in touch, please use one of the following methods; for all other burning sensations, please consult a medical professional.
               <ul class="contact-options">
@@ -120,7 +128,10 @@
                   <span>Telepathy</span>
                 </li>
               </ul>
-            </div>
+            </div> -->
+          </section>
+          <section id="blog-app">
+            
           </section>
 
         </main>

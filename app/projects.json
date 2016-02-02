@@ -1,0 +1,42 @@
+{
+  "projects": {
+    "id"  : "projects",
+    "imagePath"  : "images/giphy.gif",
+    "imageAlt"  : "projects",
+    "title"  : "projects Capital Vehicle Solutions",
+    "subtitle"   : "Role: Front End Template Development, Architecture",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "hitachi2": {
+    "id"  : "hitachi2",
+    "imagePath"  : "images/lp.jpg",
+    "imageAlt"  : "Hitachi",
+    "title"  : "LeasePlan",
+    "subtitle"   : "Slide 1 Image SubTitle",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "hitachi2": {
+    "id"  : "hitachi2",
+    "imagePath"  : "images/lp.jpg",
+    "imageAlt"  : "Hitachi",
+    "title"  : "LeasePlan",
+    "subtitle"   : "Slide 1 Image SubTitle",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "hitachi2": {
+    "id"  : "hitachi2",
+    "imagePath"  : "images/lp.jpg",
+    "imageAlt"  : "Hitachi",
+    "title"  : "LeasePlan",
+    "subtitle"   : "Slide 1 Image SubTitle",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  }
+}

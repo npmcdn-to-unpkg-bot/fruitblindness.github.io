@@ -16,51 +16,51 @@
     position: relative;
     font-family: $exolight;
 
-    &:before {
-      content: '';
-      position: absolute;
-      top: -3vw;
-      right: -2.3vw;
-      height: 0;
-      width: 0;
-      border-right:  10vw solid $spicy;
-      border-top: 4vw solid transparent;
-      border-bottom: 4vw solid transparent;
-      display: block;
-      transform: scale(1.2) rotate(30deg);
-    }
+    // &:before {
+    //   content: '';
+    //   position: absolute;
+    //   top: -3vw;
+    //   right: -2.3vw;
+    //   height: 0;
+    //   width: 0;
+    //   border-right:  10vw solid $spicy;
+    //   border-top: 4vw solid transparent;
+    //   border-bottom: 4vw solid transparent;
+    //   display: block;
+    //   transform: scale(1.2) rotate(30deg);
+    // }
 
-    &:after {
-      content: '';
-      position: absolute;
-      top: 1.1vw;
-      right: -7.4vw;
-      height: 0;
-      width: 0;
-      border-right: 7vw solid $cinder;
-      border-top: 2vw solid transparent;
-      border-bottom: 4vw solid transparent;
-      display: block;
-      transform: scale(-1.2) rotate(-89.5deg);
-      opacity: 0.5;
-    }
+    // &:after {
+    //   content: '';
+    //   position: absolute;
+    //   top: 1.1vw;
+    //   right: -7.4vw;
+    //   height: 0;
+    //   width: 0;
+    //   border-right: 7vw solid $cinder;
+    //   border-top: 2vw solid transparent;
+    //   border-bottom: 4vw solid transparent;
+    //   display: block;
+    //   transform: scale(-1.2) rotate(-89.5deg);
+    //   opacity: 0.5;
+    // }
 
       h3 {
         &:first-of-type {
-          &:before {
-            content: '';
-            position: absolute;
-            top: -2.4vw;
-            right: 4.68vw;
-            height: 0;
-            width: 0;
-            border-right: 7vw solid $spicier;
-            border-top: 2vw solid transparent;
-            border-bottom: 4vw solid transparent;
-            display: block;
-            transform: scale(-1.2) rotate(-117.5deg) skewX(120deg);
-            opacity: 1;
-          }
+          // &:before {
+          //   content: '';
+          //   position: absolute;
+          //   top: -2.4vw;
+          //   right: 4.68vw;
+          //   height: 0;
+          //   width: 0;
+          //   border-right: 7vw solid $spicier;
+          //   border-top: 2vw solid transparent;
+          //   border-bottom: 4vw solid transparent;
+          //   display: block;
+          //   transform: scale(-1.2) rotate(-117.5deg) skewX(120deg);
+          //   opacity: 1;
+          // }
         }
       }
 

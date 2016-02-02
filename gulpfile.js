@@ -82,6 +82,8 @@ gulp.task('serve', ['styles', 'fonts'], function () {
     server: {
       baseDir: ['.tmp', 'app'],
       routes: {
+        '/config.js': 'config.js',
+        '/jspm_packages': 'jspm_packages',
         '/bower_components': 'bower_components'
       }
     }

@@ -21,7 +21,9 @@ function alignIntro() {
 		headerHeight = parseInt($('.header').offset().top);
 		introParaOffset = introOffset - headerHeight;
 		offsetRecalc = menuOffset - introParaOffset;
-		$('#section-one').css('padding-top', offsetRecalc);
+		if ($(document).scrollTop() <= 80) {
+			$('#section-one').css('padding-top', offsetRecalc);
+		}
 }
 
 function updatePos(){
@@ -43,9 +45,7 @@ function updatePos(){
 
 $(document).ready(function(){
 
-	if ($(document).scrollTop() <= 80) {
-			alignIntro();
-	}
+	alignIntro();
 
 	$("a[href*='#']").click(function() {
         $("html, body").animate({
