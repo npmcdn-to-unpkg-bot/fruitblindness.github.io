@@ -1,0 +1,212 @@
+{
+  "projects": {
+    "id"  : "projects",
+    "imagePath"  : "images/art/1.jpg",
+    "imageAlt"  : "projects",
+    "title"  : "projects Capital Vehicle Solutions",
+    "subtitle"   : "Role: Front End Template Development, Architecture",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "hitachi2": {
+    "id"  : "hitachi2",
+    "imagePath"  : "images/art/2.jpg",
+    "imageAlt"  : "Hitachi",
+    "title"  : "LeasePlan",
+    "subtitle"   : "Slide 1 Image SubTitle",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "hitachi3": {
+    "id"  : "hitachi3",
+    "imagePath"  : "images/art/3.jpg",
+    "imageAlt"  : "Hitachi",
+    "title"  : "LeasePlan",
+    "subtitle"   : "Slide 1 Image SubTitle",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "hitachi4": {
+    "id"  : "hitachi4",
+    "imagePath"  : "images/art/4.jpg",
+    "imageAlt"  : "Hitachi",
+    "title"  : "LeasePlan",
+    "subtitle"   : "Slide 1 Image SubTitle",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "hitachi5": {
+    "id"  : "hitachi5",
+    "imagePath"  : "images/art/5.jpg",
+    "imageAlt"  : "Hitachi",
+    "title"  : "LeasePlan",
+    "subtitle"   : "Slide 1 Image SubTitle",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "hitachi6": {
+    "id"  : "hitachi6",
+    "imagePath"  : "images/art/6.jpg",
+    "imageAlt"  : "Hitachi",
+    "title"  : "LeasePlan",
+    "subtitle"   : "Slide 1 Image SubTitle",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "projects1": {
+    "id"  : "projects1",
+    "imagePath"  : "images/art/7.jpg",
+    "imageAlt"  : "projects",
+    "title"  : "projects Capital Vehicle Solutions",
+    "subtitle"   : "Role: Front End Template Development, Architecture",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "hitachi23": {
+    "id"  : "hitachi23",
+    "imagePath"  : "images/art/8.jpg",
+    "imageAlt"  : "Hitachi",
+    "title"  : "LeasePlan",
+    "subtitle"   : "Slide 1 Image SubTitle",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "hitachi34": {
+    "id"  : "hitachi34",
+    "imagePath"  : "images/art/9.jpg",
+    "imageAlt"  : "Hitachi",
+    "title"  : "LeasePlan",
+    "subtitle"   : "Slide 1 Image SubTitle",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "hitachi45": {
+    "id"  : "hitachi45",
+    "imagePath"  : "images/art/10.jpg",
+    "imageAlt"  : "Hitachi",
+    "title"  : "LeasePlan",
+    "subtitle"   : "Slide 1 Image SubTitle",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "hitachi54": {
+    "id"  : "hitachi54",
+    "imagePath"  : "images/art/11.jpg",
+    "imageAlt"  : "Hitachi",
+    "title"  : "LeasePlan",
+    "subtitle"   : "Slide 1 Image SubTitle",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "hitachi36": {
+    "id"  : "hitachi36",
+    "imagePath"  : "images/art/12.jpg",
+    "imageAlt"  : "Hitachi",
+    "title"  : "LeasePlan",
+    "subtitle"   : "Slide 1 Image SubTitle",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "proje434cts": {
+    "id"  : "proje43cts",
+    "imagePath"  : "images/art/13.jpg",
+    "imageAlt"  : "projects",
+    "title"  : "projects Capital Vehicle Solutions",
+    "subtitle"   : "Role: Front End Template Development, Architecture",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "hitac24hi2": {
+    "id"  : "hitac34hi2",
+    "imagePath"  : "images/art/14.jpg",
+    "imageAlt"  : "Hitachi",
+    "title"  : "LeasePlan",
+    "subtitle"   : "Slide 1 Image SubTitle",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "hitacheri3": {
+    "id"  : "hitachrei3",
+    "imagePath"  : "images/art/15.jpg",
+    "imageAlt"  : "Hitachi",
+    "title"  : "LeasePlan",
+    "subtitle"   : "Slide 1 Image SubTitle",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "hitach5i4": {
+    "id"  : "hitach5i4",
+    "imagePath"  : "images/art/16.jpg",
+    "imageAlt"  : "Hitachi",
+    "title"  : "LeasePlan",
+    "subtitle"   : "Slide 1 Image SubTitle",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "hitachi345": {
+    "id"  : "hitachi435",
+    "imagePath"  : "images/art/17.jpg",
+    "imageAlt"  : "Hitachi",
+    "title"  : "LeasePlan",
+    "subtitle"   : "Slide 1 Image SubTitle",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "hitachi26": {
+    "id"  : "hitachi26",
+    "imagePath"  : "images/pom.jpg",
+    "imageAlt"  : "Hitachi",
+    "title"  : "LeasePlan",
+    "subtitle"   : "Slide 1 Image SubTitle",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "projects13": {
+    "id"  : "projects13",
+    "imagePath"  : "images/hitachi.jpg",
+    "imageAlt"  : "projects",
+    "title"  : "projects Capital Vehicle Solutions",
+    "subtitle"   : "Role: Front End Template Development, Architecture",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "hitachi223": {
+    "id"  : "hitachi223",
+    "imagePath"  : "images/lp.jpg",
+    "imageAlt"  : "Hitachi",
+    "title"  : "LeasePlan",
+    "subtitle"   : "Slide 1 Image SubTitle",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  },
+  "hitachi2243": {
+    "id"  : "hitachi2234",
+    "imagePath"  : "images/lp.jpg",
+    "imageAlt"  : "Hitachi",
+    "title"  : "LeasePlan",
+    "subtitle"   : "Slide 1 Image SubTitle",
+    "text"       : "Slide 1 Image Text",
+    "action"     : "Slide 1 Image Action",
+    "actionHref" : "href"
+  }
+}
