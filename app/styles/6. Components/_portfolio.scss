@@ -1,0 +1,267 @@
+.section.two {
+  max-height: 100vh;
+  height: 100vh;
+  .pager {
+    filter:sepia(0.4) saturate(2.5) hue-rotate(-30deg) contrast(0.67);
+  }
+  #projects-app {
+    height: 60%;
+  }
+}
+
+.portfolio {
+  height: 100%;
+  position: relative;
+  // margin-right: -25%;
+  transition: all 0.5s ease-out;
+  transition-delay: 1s;
+  padding-top: 2vw;
+
+  @include media($desktop) {
+    min-height: 50vh;
+  }
+  @include media($desktoplarge) {
+    padding: 3vw 15%;
+  }
+
+
+  .project-image {
+    @include span-columns(5);
+    img {
+      max-height: 100%;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  .project-info {
+    @include span-columns(6.5);
+    @include shift(0.3);
+    height: 100%;
+    position: relative;
+    padding-right: 3vw;
+
+    h2 {
+      padding-bottom: 0.5vw;
+      margin-top: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    h3 {
+      margin-top: -.8rem;
+      font-size: 1rem;
+    }
+    ul {
+      padding-left: 1rem;
+      li +li {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .close-button {
+    color: $spicy;
+    font-family: $exobold;
+    transform: scaleY(0.75);
+    appearance: none;
+    background: none;
+    border: none;
+    position: absolute;
+    top: -2rem;
+    right: 0;
+    font-size: 2.5rem;
+    transition: 0.2s color ease-out;
+    &:hover {
+      color: $texasrose;
+    }
+    &:focus {
+      outline: none;
+      border: none;
+    }
+  }
+}
+
+.pagination {
+  // overflow: hidden;
+  animation: fadein 2s ease forwards;
+  // animation-delay: 1s;
+  @include media($desktoplarge) {
+    transform: scale(1.3);
+  }
+}
+
+.detail {
+  height: 100%;
+  overflow: hidden;
+}
+
+.detail-enter {
+  animation: slidein 10s ease forwards;
+}
+
+.detail.detail-leave {
+  max-height: 999em;
+  animation: slideout 1s ease forwards;
+  .toggle {
+    transition: 0.2s opacity ease-out;
+    opacity: 0;
+  }
+}
+.detail-leave.detail-leave-active {
+  max-height: 0;
+  transition: all 0.4s ease-out;
+}
+
+.pager {
+  @include span-columns(2.3);
+  cursor: pointer;
+  opacity: 0.8;
+
+  &:nth-of-type(n+4) {
+    margin-top: 6vw;
+  }
+
+  &:last-child {
+    @include shift(7);
+    margin-top: 4vw;
+  }
+
+  &:hover {
+    position: relative;
+    z-index: 9999;
+    opacity: 1;
+    transition: all 0.3s ease-in;
+    filter: none;
+
+    svg {
+      stroke: $texasrose;
+      stroke-width: 0.1;
+      stroke-linecap: square;
+    }
+  }
+
+  &:nth-of-type(even) {
+    transform: scale(1.2);
+  }
+  &:nth-of-type(3) {
+    transform: scale(1.5);
+  }
+  &:nth-of-type(4) {
+    transform: scale(1.4);
+    @include shift(-0.4);
+  }
+}
+
+.portfolio-active {
+  margin-right: 0;
+  transition: none;
+  padding: 1vw 0 0;
+  .pagination{
+    transform: scale(1);
+    animation: none;
+  }
+  .pager.pager {
+    filter: none;
+    clear: none;
+    margin-top: 0 !important;
+    animation: none;
+    transform: scale(1);
+    &:last-child {
+      @include shift(0);
+      margin-top: 0;
+    }
+    &:nth-of-type(4) {
+      @include shift(0);
+    }
+    @include span-columns(2);
+    &.pager-active {
+      transform: scale(1.1);
+      opacity: 1;
+      position: relative;
+      z-index: 999;
+    }
+  }
+}
+
+.projects {
+  overflow: hidden;
+  height: 100%;
+}
+
+.slide {
+  float: left;
+  width: 100%;
+  height: 100%;
+  display: none;
+
+  &.slide--active {
+    display: block;
+  }
+
+  @include media($desktop) {
+    padding: 1vw 5vw 0;
+  }
+}
+
+.pager {
+  svg {
+    max-width: 100%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.toggle {
+  @extend %vertical-align;
+  transform: translateY(-50%) scaleY(1.5);
+  position: absolute;
+  font-family: $exobold;
+  color: $spicy;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: 0.2s color ease-out;
+
+  &:hover {
+    color: $texasrose;
+  }
+
+  &.toggle-prev {
+    left: 0;
+  }
+  &.toggle-next {
+    right: 0;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideout {
+  from {
+    max-height: 999em;
+  }
+  to {
+    max-height: 0;
+  }
+}
+
+@keyframes slidein {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 999em;
+  }
+}

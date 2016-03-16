@@ -20,7 +20,8 @@ System.config({
     "classnames": "npm:classnames@2.2.3",
     "core-js": "npm:core-js@1.2.6",
     "fetch": "npm:whatwg-fetch@0.10.1",
-    "react": "npm:react@0.14.6",
+    "react": "npm:react@0.14.7",
+    "react-addons-css-transition-group": "npm:react-addons-css-transition-group@0.14.7",
     "react-dom": "npm:react-dom@0.14.5",
     "react-router": "npm:react-router@2.0.0-rc5",
     "react-slick": "npm:react-slick@0.9.3",
@@ -30,9 +31,6 @@ System.config({
     },
     "github:jspm/nodelibs-buffer@0.1.0": {
       "buffer": "npm:buffer@3.6.0"
-    },
-    "github:jspm/nodelibs-domain@0.1.0": {
-      "domain-browser": "npm:domain-browser@1.1.7"
     },
     "github:jspm/nodelibs-events@0.1.1": {
       "events": "npm:events@1.0.2"
@@ -48,16 +46,6 @@ System.config({
     },
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
-    },
-    "npm:amdefine@1.0.0": {
-      "fs": "github:jspm/nodelibs-fs@0.1.2",
-      "module": "github:jspm/nodelibs-module@0.1.0",
-      "path": "github:jspm/nodelibs-path@0.1.0",
-      "process": "github:jspm/nodelibs-process@0.1.2"
-    },
-    "npm:asap@2.0.3": {
-      "domain": "github:jspm/nodelibs-domain@0.1.0",
-      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
@@ -82,25 +70,8 @@ System.config({
     "npm:core-util-is@1.0.2": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
     },
-    "npm:domain-browser@1.1.7": {
-      "events": "github:jspm/nodelibs-events@0.1.1"
-    },
-    "npm:envify@3.4.0": {
-      "jstransform": "npm:jstransform@10.1.0",
-      "process": "github:jspm/nodelibs-process@0.1.2",
-      "through": "npm:through@2.3.8"
-    },
-    "npm:esprima-fb@13001.1001.0-dev-harmony-fb": {
-      "fs": "github:jspm/nodelibs-fs@0.1.2",
-      "process": "github:jspm/nodelibs-process@0.1.2"
-    },
     "npm:fbjs@0.6.1": {
-      "core-js": "npm:core-js@1.2.6",
-      "loose-envify": "npm:loose-envify@1.1.0",
-      "process": "github:jspm/nodelibs-process@0.1.2",
-      "promise": "npm:promise@7.1.1",
-      "ua-parser-js": "npm:ua-parser-js@0.7.10",
-      "whatwg-fetch": "npm:whatwg-fetch@0.9.0"
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:history@2.0.0-rc2": {
       "child_process": "github:jspm/nodelibs-child_process@0.1.0",
@@ -121,14 +92,6 @@ System.config({
     "npm:json2mq@0.2.0": {
       "string-convert": "npm:string-convert@0.2.1"
     },
-    "npm:jstransform@10.1.0": {
-      "base62": "npm:base62@0.1.1",
-      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
-      "esprima-fb": "npm:esprima-fb@13001.1001.0-dev-harmony-fb",
-      "fs": "github:jspm/nodelibs-fs@0.1.2",
-      "process": "github:jspm/nodelibs-process@0.1.2",
-      "source-map": "npm:source-map@0.1.31"
-    },
     "npm:loose-envify@1.1.0": {
       "js-tokens": "npm:js-tokens@1.0.2",
       "process": "github:jspm/nodelibs-process@0.1.2",
@@ -141,15 +104,14 @@ System.config({
     "npm:process@0.11.2": {
       "assert": "github:jspm/nodelibs-assert@0.1.0"
     },
-    "npm:promise@7.1.1": {
-      "asap": "npm:asap@2.0.3",
-      "fs": "github:jspm/nodelibs-fs@0.1.2"
-    },
     "npm:query-string@3.0.0": {
       "strict-uri-encode": "npm:strict-uri-encode@1.1.0"
     },
+    "npm:react-addons-css-transition-group@0.14.7": {
+      "react": "npm:react@0.14.7"
+    },
     "npm:react-dom@0.14.5": {
-      "react": "npm:react@0.14.6"
+      "react": "npm:react@0.14.7"
     },
     "npm:react-responsive-mixin@0.3.5": {
       "can-use-dom": "npm:can-use-dom@0.1.0",
@@ -170,12 +132,11 @@ System.config({
       "classnames": "npm:classnames@2.2.3",
       "json2mq": "npm:json2mq@0.2.0",
       "object-assign": "npm:object-assign@2.1.1",
-      "react": "npm:react@0.14.6",
+      "react": "npm:react@0.14.7",
       "react-responsive-mixin": "npm:react-responsive-mixin@0.3.5",
       "slick-carousel": "npm:slick-carousel@1.5.9"
     },
-    "npm:react@0.14.6": {
-      "envify": "npm:envify@3.4.0",
+    "npm:react@0.14.7": {
       "fbjs": "npm:fbjs@0.6.1",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
@@ -192,12 +153,6 @@ System.config({
     "npm:slick-carousel@1.5.9": {
       "jquery": "npm:jquery@2.2.0"
     },
-    "npm:source-map@0.1.31": {
-      "amdefine": "npm:amdefine@1.0.0",
-      "fs": "github:jspm/nodelibs-fs@0.1.2",
-      "path": "github:jspm/nodelibs-path@0.1.0",
-      "process": "github:jspm/nodelibs-process@0.1.2"
-    },
     "npm:stream-browserify@1.0.0": {
       "events": "github:jspm/nodelibs-events@0.1.1",
       "inherits": "npm:inherits@2.0.1",
@@ -205,13 +160,6 @@ System.config({
     },
     "npm:string_decoder@0.10.31": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
-    },
-    "npm:through@2.3.8": {
-      "process": "github:jspm/nodelibs-process@0.1.2",
-      "stream": "github:jspm/nodelibs-stream@0.1.0"
-    },
-    "npm:ua-parser-js@0.7.10": {
-      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
     "npm:util@0.10.3": {
       "inherits": "npm:inherits@2.0.1",

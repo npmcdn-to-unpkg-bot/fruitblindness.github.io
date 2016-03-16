@@ -1,0 +1,57 @@
+.section.three {
+  max-height: 100vh;
+  height: 100vh;
+  #art-app {
+    height: 60%;
+  }
+  .portfolio {
+    height: 100%;
+    margin-right: -10%;
+    padding-top: 2vw;
+    .pager {
+      filter:sepia(0.2) saturate(2) hue-rotate(-30deg) contrast(0.67);
+      @include span-columns(1.5);
+      margin-top: 0;
+      transform: scale(1.3);
+      animation: none;
+      &:nth-of-type(n) {
+        margin-top: -2vw;
+      }
+      &:nth-of-type(odd) {
+        transform: scale(1.1);
+      }
+      &:nth-of-type(3n) {
+        transform: scale(1.2);
+      }
+      &:last-child {
+        @include shift(0);
+        margin-top: 0;
+      }
+      &:nth-of-type(4) {
+        @include shift(0);
+      }
+    }
+
+    .toggle, .close-button {
+      color: $tundora;
+      &:hover {
+        color: $cinder;
+      }
+    }
+
+    &.portfolio-active {
+      margin-right: 0;
+      .pager {
+        transform: scale(1);
+        @include span-columns(2.4);
+        filter: none;
+        &.pager-active {
+          transform: scale(1.1);
+          opacity: 1;
+          position: relative;
+          z-index: 999;
+        }
+      }
+    }
+  }
+}

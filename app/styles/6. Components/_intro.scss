@@ -48,6 +48,8 @@
 		background: $spicier;
 		transition: 0.5s all ease-out;
 		overflow: hidden;
+		transform-origin: 50% 80%;
+		animation: jiggle 5s linear infinite;
 
 		@include media($desktoplarge) {
 			font-size: 1.3rem;
@@ -70,8 +72,7 @@
 		&:hover {
 			color: transparent;
 			// text-indent: -99999em;
-			transform: scale(0.7);
-			transform-origin: 50% 80%;
+			animation: small 0.3s linear forwards;
 			background: darken($spicier, 5%);
 
 			&:before {
@@ -81,5 +82,38 @@
 	}
 	@include media($desktoplarge) {
 		font-size: 2rem;
+	}
+}
+
+@keyframes small {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(0.7);
+	}
+}
+
+@keyframes jiggle {
+	0% {
+		transform: rotate(0deg);
+	}
+	75% {
+		transform: rotate(0deg);
+	}
+	80% {
+		transform: rotate(2deg);
+	}
+	85% {
+		transform: rotate(-2deg);
+	}
+	90% {
+		transform: rotate(2deg);
+	}
+	95% {
+		transform: rotate(-2deg);
+	}
+	100% {
+		transform: rotate(0deg);
 	}
 }

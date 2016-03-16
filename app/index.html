@@ -15,7 +15,6 @@
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.3.15/slick.css" />
 
   <script src="jspm_packages/system.js"></script>
   <script src="config.js"></script>
@@ -30,9 +29,6 @@
 
 
 <body data-spy="scroll" data-target="#nav">
-  <!--[if lt IE 10]>
-  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
 
   <!--Navigation-->
   <nav class="nav-wrapper" id="nav">
@@ -43,9 +39,6 @@
         <li class="menu-item"><a href="#section-two" class="link">Digital</a></li>
         <li class="menu-item"><a href="#section-three" class="link">Art</a></li>
         <li class="menu-item"><a href="#section-four" class="link">About</a></li>
-        <li class="menu-item menu-item--blog"><a href="#section-five" class="link">
-          <svg class="blog icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/pen.svg#pen"></use></svg>
-          Blog</a></li>
         </ul>
       </div>
     </nav>
@@ -72,7 +65,7 @@
           <h2 class="title">Digital</h2> <br />
           <h3 class="sub-title">The Day Job</h3>
         </header>
-        <div id="portfolio-app"></div>
+        <div id="projects-app"></div>
       </section>
 
       <!--Art section-->
@@ -100,38 +93,35 @@
               <ul>
                 <li><strong>HTML</strong> via <strong>Jade</strong></li>
                 <li><strong>CSS</strong> via <strong>SASS</strong></li>
-                <li><strong>Javascript</strong>, optionally utilising <strong>jQuery</strong></li>
+                <li><strong>JavaScript</strong>, optionally utilising <strong>React, jQuery</strong></li>
                 <li>Everything via <strong>Gulp</strong></li>
                 <li><strong>PHP</strong> because of <strong>WordPress</strong></li>
               </ul>
               <h3>Keen on:</h3>
               <ul>
-                <li><strong>ReactJS</strong></li>
+                <li><strong>Python/Django</strong></li>
                 <li><strong>NodeJS</strong></li>
                 <li>Basically tying my shoelaces with JavaScript</li>
               </ul>
+              <div class="contact">
+                <h3>Contact:</h3>
+                If you have a burning desire to get in touch, please use one of the following methods. For all other burning sensations, please consult a medical professional.
+                <ul class="contact-options">
+                  <li>
+                    <div class="icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/mail.svg#mail"></use></svg></div>
+                    <span>E-mail</span>
+                  </li>
+                  <li>
+                    <div class="icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/twitter.svg#twitter"></use></svg></div>
+                    <span>Twitter</span>
+                  </li>
+                  <li>
+                    <div class="icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/telepathy.svg#telepathy"></use></svg></div>
+                    <span>Telepathy</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <!-- <div class="contact">
-              <h3>Contact:</h3>
-              If you have a burning desire to get in touch, please use one of the following methods; for all other burning sensations, please consult a medical professional.
-              <ul class="contact-options">
-                <li>
-                  <div class="icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/mail.svg#mail"></use></svg></div>
-                  <span>E-mail</span>
-                </li>
-                <li>
-                  <div class="icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/twitter.svg#twitter"></use></svg></div>
-                  <span>Twitter</span>
-                </li>
-                <li>
-                  <div class="icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/telepathy.svg#telepathy"></use></svg></div>
-                  <span>Telepathy</span>
-                </li>
-              </ul>
-            </div> -->
-          </section>
-          <section id="blog-app">
-            
           </section>
 
         </main>
@@ -159,7 +149,9 @@
           <!-- endbuild -->
 
           <!-- build:js scripts/main.js -->
+          <script src="scripts/snap.js"></script>
           <script src="scripts/TweenMax.min.js"></script>
+          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.10/js/min/perfect-scrollbar.jquery.min.js"></script>
           <script src="scripts/main.js"></script>
           <script src="scripts/scrollspy.js"></script>
           <!-- endbuild -->

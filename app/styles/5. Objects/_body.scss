@@ -12,6 +12,7 @@
 .section {
 
     @include media($desktop) {
+        overflow: hidden;
         position: relative;
         width: 100%;
         padding: 2.2vw 8vw 3vw calc(150px + 3vw);
@@ -33,7 +34,7 @@
                 }
 
                 h2 {
-                  border-bottom: 1px solid $text-colour;
+                  border-bottom: .2vw solid $text-colour;
                 }
             }
         }
