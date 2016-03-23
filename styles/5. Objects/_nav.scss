@@ -1,0 +1,187 @@
+.nav-wrapper {
+    background: $cinder;
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+
+    @include media($desktop){
+        width: 7vw;
+        height: 100vh;
+        top: 0;
+        bottom: auto;
+    }
+}
+
+.menu-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 10px;
+  width: 100%;
+  height: 100%;
+
+  @include media($desktop) {
+    padding: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1.3vw;
+    width: 12rem;
+    min-width: 180px;
+    height: auto;
+  }
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    @include media(max-width 1099px) {
+      margin: 0;
+      height: 100%;
+    }
+    @include media($desktop) {
+      padding: .38rem 0;
+    }
+}
+
+.menu-item {
+  position: relative;
+  background: $cinder;
+  @include span-columns(3);
+  height: 100%;
+  padding-top: 15px;
+  text-align: center;
+
+  .link {
+    display: block;
+    text-decoration: none;
+    color: $spicy;
+    width: 100%;
+    height: 100%;
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+
+  &.visible {
+    background: linear-gradient(45deg, $cinder 0%, lighten($cinder, 2%) 74%, lighten($cinder, 3.5%) 75%,$cinder 100%); /* W3C */
+
+    .link {
+      color: $texasrose;
+    }
+  }
+
+  @include media($desktop) {
+    padding-top: 0;
+    @include span-columns(12);
+    text-align: left;
+
+    .link {
+      position: relative;
+      display: block;
+      padding: 1rem .5rem;
+      text-indent: 3.8rem;
+      transition: 0.2s ease-out all;
+
+      &:before {
+        content: '';
+        display: block;
+        background: $tundora;
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        left: .5rem;
+        @extend %vertical-align;
+        z-index: 99;
+      }
+
+      &:focus {
+        border: none;
+        outline: none;
+      }
+    }
+
+    &+.menu-item:not(.menu-item--blog) {
+
+      .link {
+        &:after {
+          content: '';
+          display: block;
+          background: $tundora;
+          width: 1.5rem;
+          height: 2.5rem;
+          left: 1rem;
+          top: -1rem;
+          position: absolute;
+        }
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        background: $cinder;
+        position: absolute;
+        top: -.66rem;
+        border-radius: 50%;
+        width: 1.2rem;
+        height: 1.3rem;
+        left: 2.05rem;
+        z-index: 999;
+      }
+      &:after {
+        content: '';
+        display: block;
+        background: $cinder;
+        position: absolute;
+        top: -.66rem;
+        border-radius: 50%;
+        width: 1.2rem;
+        height: 1.3rem;
+        left: .25rem;
+        z-index: 999;
+      }
+    }
+
+    &.visible {
+      width: 110%;
+      // transform: translateX(10%);
+      .link {
+        padding-left: 4rem;
+        text-indent: 1.5rem;
+      }
+    }
+  }
+}
+
+
+// TODO: Re-examine blog integration
+// .blog.icon {
+//   position: absolute;
+//   fill: $texasrose;
+//   left: 1.2rem;
+//   top: -.1rem;
+//   width: 2.3rem;
+//   height: 2.3rem;
+//   z-index: 999;
+// }
+
+.active {
+  display: none;
+}
+@include media($desktop) {
+  .active {
+      display: block;
+      border-radius: 50%;
+      width: 2.5rem;
+      height: 2.5rem;
+      left: .5rem;
+      position: absolute;
+      top: 1.5rem;
+      z-index: 100;
+      background: $texasrose;
+  }
+}
