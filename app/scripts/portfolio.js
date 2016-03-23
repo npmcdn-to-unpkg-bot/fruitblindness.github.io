@@ -15,7 +15,9 @@ import classNames from'classnames';
 
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
-import {state} from 'scripts/app/state';
+const state = {
+ projectOpen: false
+}
 
 const uniqueId = (function() {
   var count = 0;
