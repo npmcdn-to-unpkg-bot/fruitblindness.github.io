@@ -1,9 +1,24 @@
 .section.one {
+	font-size: calc(18px + 0.5vw);
+	font-family: $exolight;
+	padding: 6vh 8vw 4vh;
+
+	.title {
+		font-size: 35px;
+		margin: 0;
+	}
+
+	@include media($tablet) {
+		.title {
+			font-size: calc(76px + 0.4vw);
+		}
+	}
+
 	@include media($desktop) {
-		font-family: $exolight;
+		font-size: 1.7vw;
+		padding: 2.2vw 8vw 3vw calc(150px + 3vw);
 		padding-top: 10%;
 		padding-right: 32%;
-		font-size: 1.7vw;
 		overflow: hidden;
 
 		.title {
@@ -18,38 +33,44 @@
 			bottom: -13%;
 			right: -13%;
 			width: 38%;
-			// max-width: 600px;
 			height: 95%;
-			// max-height: 800px;
 			background: url('../images/stag.svg') top 0 left 0 / cover no-repeat;
 			transform: rotate(-1deg);
 		}
 	}
+
 	.lead-in {
+		width: 150px;
+		height: 120px;
+		font-size: 16px;
 		color: $texasrose;
 		font-family: $exo;
 		text-decoration: none;
 		position: relative;
 		z-index: 999;
-		margin-top: 5.5%;
-    padding-top: 1.2rem;
-    text-indent: .3rem;
-    left: 47%;
-    display: inline-block;
-    height: 10vw;
-		max-height: 150px;
-    width: 14vw;
-		max-width: 180px;
-    clip-path: polygon(100% 45%, 0 45%, 50% 100%);
-    -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
-		font-size: 1.3vw;
-		transition: 0.5s margin-top ease-out;
+    left: 19.5vw;
+		display: none;
 		text-align: center;
 		background: $spicier;
 		transition: 0.5s all ease-out;
 		overflow: hidden;
 		transform-origin: 50% 80%;
 		animation: jiggle 5s linear infinite;
+
+		@include media($desktop) {
+			margin-top: 5.5%;
+	    padding-top: 1.2rem;
+	    text-indent: .3rem;
+			display: inline-block;
+	    clip-path: polygon(100% 0, 0 0, 50% 100%);
+	    -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+			height: 10vw;
+			max-height: 150px;
+			font-size: 1.3vw;
+	    width: 14vw;
+			max-width: 180px;
+			left: 47%;
+		}
 
 		@include media($desktoplarge) {
 			font-size: 1.3rem;
@@ -71,7 +92,6 @@
 
 		&:hover {
 			color: transparent;
-			// text-indent: -99999em;
 			animation: small 0.3s linear forwards;
 			background: darken($spicier, 5%);
 

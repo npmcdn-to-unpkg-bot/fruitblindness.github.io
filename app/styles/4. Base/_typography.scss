@@ -1,4 +1,5 @@
 html, body {
+	font-size: 100%;
 	font-family: $exo;
 	-webkit-font-smoothing: antialiased;
 }
@@ -16,14 +17,14 @@ h3, h4, h5, h6 {
 
 .section .header {
 	> h2 {
-		font-size: 2.8vw;
+		font-size: calc(32px + 1vw);
 		margin-bottom: 0;
 		padding-bottom: .05rem;
     display: inline-block;
 	}
 	> h3 {
 		margin-top: 0;
-		font-size: 1.4vw;
+		font-size: calc(22px + 0.5vw);
 		padding-top: .25rem;
 		display: inline-block;
 	}
@@ -31,7 +32,7 @@ h3, h4, h5, h6 {
 
 //
 p.superscript {
-	font-size: .8vw;
+	font-size: calc(10px + 0.3vw);
 	line-height: .8rem;
 	margin-top: -.3rem;
 }

@@ -1,212 +1,170 @@
 {
-  "projects": {
-    "id"  : "projects",
+  "stag": {
+    "id"  : "Stag",
+    "imagePath"  : "images/art/18.jpg",
+    "imagePathFull"  : "images/art/18-full.jpg",
+    "imageAlt"  : "Stag",
+    "title"  : "Stag",
+    "subtitle"   : "Acrylics, Bristol Board"
+  },
+  "humpug": {
+    "id"  : "Bah, Humpug",
+    "imagePath"  : "images/art/19.jpg",
+    "imagePathFull"  : "images/art/19-full.jpg",
+    "imageAlt"  : "Bah, Humpug",
+    "title"  : "Bah, Humpug",
+    "subtitle"   : "Adobe Illustrator CC"
+  },
+  "skateboarder": {
+    "id"  : "Skateboarder",
+    "imagePath"  : "images/art/14.jpg",
+    "imagePathFull"  : "images/art/14-full.png",
+    "imageAlt"  : "Skateboarder",
+    "title"  : "Skateboarder",
+    "subtitle"   : "Photoshop, Wacom Tablet"
+  },
+  "reindeers": {
+    "id"  : "Reindeers",
+    "imagePath"  : "images/art/15.jpg",
+    "imagePathFull"  : "images/art/15-full.png",
+    "imageAlt"  : "Reindeer(s)",
+    "title"  : "Reindeer(s)",
+    "subtitle"   : "Adobe Illustrator CC"
+  },
+  "esprit": {
+    "id"  : "Esprit",
+    "imagePath"  : "images/art/16.jpg",
+    "imagePathFull"  : "images/art/16-full.png",
+    "imageAlt"  : "L'esprit de L'escalier",
+    "title"  : "L'esprit de L'escalier",
+    "subtitle"   : "Adobe Illustrator CC"
+  },
+  "hyrule": {
+    "id"  : "hyrule",
+    "imagePath"  : "images/art/17.jpg",
+    "imagePathFull"  : "images/art/17-full.png",
+    "imageAlt"  : "Hyrule Visitor's Guide",
+    "title"  : "Hyrule Visitor's Guide",
+    "subtitle"   : "Adobe Illustrator CC, Photoshop CC"
+  },
+  "development": {
+    "id"  : "Development",
+    "imagePath"  : "images/art/20.jpg",
+    "imagePathFull"  : "images/art/20-full.jpg",
+    "imageAlt"  : "Development",
+    "title"  : "Development",
+    "subtitle"   : "Adobe Photoshop CC, Illustrator CC"
+  },
+  "kristen": {
+    "id"  : "kristen",
     "imagePath"  : "images/art/1.jpg",
-    "imageAlt"  : "projects",
-    "title"  : "projects Capital Vehicle Solutions",
-    "subtitle"   : "Role: Front End Template Development, Architecture",
-    "text"       : "Slide 1 Image Text",
-    "action"     : "Slide 1 Image Action",
-    "actionHref" : "href"
+    "imagePathFull"  : "images/art/1-full.jpg",
+    "imageAlt"  : "Kristen Bell",
+    "title"  : "Kristen Bell",
+    "subtitle"   : "iPad, Pogo Stylus, Brushes App"
   },
-  "hitachi2": {
-    "id"  : "hitachi2",
+  "pinocchio": {
+    "id"  : "pinocchio",
     "imagePath"  : "images/art/2.jpg",
-    "imageAlt"  : "Hitachi",
-    "title"  : "LeasePlan",
-    "subtitle"   : "Slide 1 Image SubTitle",
-    "text"       : "Slide 1 Image Text",
-    "action"     : "Slide 1 Image Action",
-    "actionHref" : "href"
+    "imagePathFull"  : "images/art/2-full.jpg",
+    "imageAlt"  : "Pinocchio",
+    "title"  : "Pinocchio",
+    "subtitle"   : "iPad, Pogo Stylus, Brushes App"
   },
-  "hitachi3": {
-    "id"  : "hitachi3",
+  "jem": {
+    "id"  : "jem",
     "imagePath"  : "images/art/3.jpg",
-    "imageAlt"  : "Hitachi",
-    "title"  : "LeasePlan",
-    "subtitle"   : "Slide 1 Image SubTitle",
-    "text"       : "Slide 1 Image Text",
-    "action"     : "Slide 1 Image Action",
-    "actionHref" : "href"
+    "imagePathFull"  : "images/art/3-full.jpg",
+    "imageAlt"  : "Jem",
+    "title"  : "Jem",
+    "subtitle"   : "iPad, Pogo Stylus, Brushes App"
   },
-  "hitachi4": {
-    "id"  : "hitachi4",
+  "mountains": {
+    "id"  : "Mountains",
     "imagePath"  : "images/art/4.jpg",
-    "imageAlt"  : "Hitachi",
-    "title"  : "LeasePlan",
-    "subtitle"   : "Slide 1 Image SubTitle",
-    "text"       : "Slide 1 Image Text",
-    "action"     : "Slide 1 Image Action",
-    "actionHref" : "href"
+    "imagePathFull"  : "images/art/4-full.png",
+    "imageAlt"  : "Mountains",
+    "title"  : "Mountains",
+    "subtitle"   : "iPad, Pogo Stylus, Brushes App"
   },
-  "hitachi5": {
-    "id"  : "hitachi5",
+  "brando": {
+    "id"  : "Brando",
     "imagePath"  : "images/art/5.jpg",
-    "imageAlt"  : "Hitachi",
-    "title"  : "LeasePlan",
-    "subtitle"   : "Slide 1 Image SubTitle",
-    "text"       : "Slide 1 Image Text",
-    "action"     : "Slide 1 Image Action",
-    "actionHref" : "href"
+    "imagePathFull"  : "images/art/5-full.jpg",
+    "imageAlt"  : "Brando",
+    "title"  : "Brando",
+    "subtitle"   : "iPad, Pogo Stylus, Brushes App"
   },
-  "hitachi6": {
+  "wolf": {
     "id"  : "hitachi6",
     "imagePath"  : "images/art/6.jpg",
-    "imageAlt"  : "Hitachi",
-    "title"  : "LeasePlan",
-    "subtitle"   : "Slide 1 Image SubTitle",
-    "text"       : "Slide 1 Image Text",
-    "action"     : "Slide 1 Image Action",
-    "actionHref" : "href"
+    "imagePathFull"  : "images/art/6-full.jpg",
+    "imageAlt"  : "Wolf",
+    "title"  : "Wolf",
+    "subtitle"   : "iPad, Pogo Stylus, Procreate App"
   },
-  "projects1": {
-    "id"  : "projects1",
+  "acyrlic": {
+    "id"  : "Acrylic",
     "imagePath"  : "images/art/7.jpg",
-    "imageAlt"  : "projects",
-    "title"  : "projects Capital Vehicle Solutions",
-    "subtitle"   : "Role: Front End Template Development, Architecture",
-    "text"       : "Slide 1 Image Text",
-    "action"     : "Slide 1 Image Action",
-    "actionHref" : "href"
+    "imagePathFull"  : "images/art/7-full.jpg",
+    "imageAlt"  : "Self-Portrait",
+    "title"  : "Self-Portrait",
+    "subtitle"   : "Acrylics, Bristol Board"
   },
-  "hitachi23": {
-    "id"  : "hitachi23",
+  "casey": {
+    "id"  : "casey",
     "imagePath"  : "images/art/8.jpg",
-    "imageAlt"  : "Hitachi",
-    "title"  : "LeasePlan",
-    "subtitle"   : "Slide 1 Image SubTitle",
-    "text"       : "Slide 1 Image Text",
-    "action"     : "Slide 1 Image Action",
-    "actionHref" : "href"
+    "imagePathFull"  : "images/art/8-full.jpg",
+    "imageAlt"  : "John Casey",
+    "title"  : "John Casey",
+    "subtitle"   : "Adobe Photoshop CS5"
   },
-  "hitachi34": {
-    "id"  : "hitachi34",
+  "silhouette": {
+    "id"  : "Silhouette",
     "imagePath"  : "images/art/9.jpg",
-    "imageAlt"  : "Hitachi",
-    "title"  : "LeasePlan",
-    "subtitle"   : "Slide 1 Image SubTitle",
-    "text"       : "Slide 1 Image Text",
-    "action"     : "Slide 1 Image Action",
-    "actionHref" : "href"
+    "imagePathFull"  : "images/art/9-full.jpg",
+    "imageAlt"  : "Silhouette",
+    "title"  : "Silhouette",
+    "subtitle"   : "iPad, Griffin Stylus, Procreate App"
   },
-  "hitachi45": {
-    "id"  : "hitachi45",
+  "che": {
+    "id"  : "Che",
     "imagePath"  : "images/art/10.jpg",
-    "imageAlt"  : "Hitachi",
-    "title"  : "LeasePlan",
-    "subtitle"   : "Slide 1 Image SubTitle",
-    "text"       : "Slide 1 Image Text",
-    "action"     : "Slide 1 Image Action",
-    "actionHref" : "href"
+    "imagePathFull"  : "images/art/10-full.jpg",
+    "imageAlt"  : "Che",
+    "title"  : "Che",
+    "subtitle"   : "Pencils, Moleskine"
   },
-  "hitachi54": {
-    "id"  : "hitachi54",
+  "jesy": {
+    "id"  : "Jesy",
     "imagePath"  : "images/art/11.jpg",
-    "imageAlt"  : "Hitachi",
-    "title"  : "LeasePlan",
-    "subtitle"   : "Slide 1 Image SubTitle",
-    "text"       : "Slide 1 Image Text",
-    "action"     : "Slide 1 Image Action",
-    "actionHref" : "href"
+    "imagePathFull"  : "images/art/11-full.jpg",
+    "imageAlt"  : "Jesy",
+    "title"  : "Jesy",
+    "subtitle"   : "Charcoal, Moleskine"
   },
-  "hitachi36": {
-    "id"  : "hitachi36",
-    "imagePath"  : "images/art/12.jpg",
-    "imageAlt"  : "Hitachi",
-    "title"  : "LeasePlan",
-    "subtitle"   : "Slide 1 Image SubTitle",
-    "text"       : "Slide 1 Image Text",
-    "action"     : "Slide 1 Image Action",
-    "actionHref" : "href"
-  },
-  "proje434cts": {
-    "id"  : "proje43cts",
+  "sketch1": {
+    "id"  : "Sketch 1",
     "imagePath"  : "images/art/13.jpg",
-    "imageAlt"  : "projects",
-    "title"  : "projects Capital Vehicle Solutions",
-    "subtitle"   : "Role: Front End Template Development, Architecture",
-    "text"       : "Slide 1 Image Text",
-    "action"     : "Slide 1 Image Action",
-    "actionHref" : "href"
+    "imagePathFull"  : "images/art/13-full.jpg",
+    "imageAlt"  : "Sketch 1",
+    "title"  : "Sketch 1",
+    "subtitle"   : "Biro, Moleskine"
   },
-  "hitac24hi2": {
-    "id"  : "hitac34hi2",
-    "imagePath"  : "images/art/14.jpg",
-    "imageAlt"  : "Hitachi",
-    "title"  : "LeasePlan",
-    "subtitle"   : "Slide 1 Image SubTitle",
-    "text"       : "Slide 1 Image Text",
-    "action"     : "Slide 1 Image Action",
-    "actionHref" : "href"
+  "sketch2": {
+    "id"  : "sketch2",
+    "imagePath"  : "images/art/12.jpg",
+    "imagePathFull"  : "images/art/12-full.jpg",
+    "imageAlt"  : "Sketch 2",
+    "title"  : "Sketch 2",
+    "subtitle"   : "Pencils, Moleskine"
   },
-  "hitacheri3": {
-    "id"  : "hitachrei3",
-    "imagePath"  : "images/art/15.jpg",
-    "imageAlt"  : "Hitachi",
-    "title"  : "LeasePlan",
-    "subtitle"   : "Slide 1 Image SubTitle",
-    "text"       : "Slide 1 Image Text",
-    "action"     : "Slide 1 Image Action",
-    "actionHref" : "href"
-  },
-  "hitach5i4": {
-    "id"  : "hitach5i4",
-    "imagePath"  : "images/art/16.jpg",
-    "imageAlt"  : "Hitachi",
-    "title"  : "LeasePlan",
-    "subtitle"   : "Slide 1 Image SubTitle",
-    "text"       : "Slide 1 Image Text",
-    "action"     : "Slide 1 Image Action",
-    "actionHref" : "href"
-  },
-  "hitachi345": {
-    "id"  : "hitachi435",
-    "imagePath"  : "images/art/17.jpg",
-    "imageAlt"  : "Hitachi",
-    "title"  : "LeasePlan",
-    "subtitle"   : "Slide 1 Image SubTitle",
-    "text"       : "Slide 1 Image Text",
-    "action"     : "Slide 1 Image Action",
-    "actionHref" : "href"
-  },
-  "hitachi26": {
-    "id"  : "hitachi26",
-    "imagePath"  : "images/pom.jpg",
-    "imageAlt"  : "Hitachi",
-    "title"  : "LeasePlan",
-    "subtitle"   : "Slide 1 Image SubTitle",
-    "text"       : "Slide 1 Image Text",
-    "action"     : "Slide 1 Image Action",
-    "actionHref" : "href"
-  },
-  "projects13": {
-    "id"  : "projects13",
-    "imagePath"  : "images/hitachi.jpg",
-    "imageAlt"  : "projects",
-    "title"  : "projects Capital Vehicle Solutions",
-    "subtitle"   : "Role: Front End Template Development, Architecture",
-    "text"       : "Slide 1 Image Text",
-    "action"     : "Slide 1 Image Action",
-    "actionHref" : "href"
-  },
-  "hitachi223": {
-    "id"  : "hitachi223",
-    "imagePath"  : "images/lp.jpg",
-    "imageAlt"  : "Hitachi",
-    "title"  : "LeasePlan",
-    "subtitle"   : "Slide 1 Image SubTitle",
-    "text"       : "Slide 1 Image Text",
-    "action"     : "Slide 1 Image Action",
-    "actionHref" : "href"
-  },
-  "hitachi2243": {
-    "id"  : "hitachi2234",
-    "imagePath"  : "images/lp.jpg",
-    "imageAlt"  : "Hitachi",
-    "title"  : "LeasePlan",
-    "subtitle"   : "Slide 1 Image SubTitle",
-    "text"       : "Slide 1 Image Text",
-    "action"     : "Slide 1 Image Action",
-    "actionHref" : "href"
+  "sketch3": {
+    "id"  : "sketch3",
+    "imagePath"  : "images/art/21.jpg",
+    "imagePathFull"  : "images/art/21-full.jpg",
+    "imageAlt"  : "Sketch 3",
+    "title"  : "Sketch 3",
+    "subtitle"   : "Biro, Moleskine"
   }
 }

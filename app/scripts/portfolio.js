@@ -325,15 +325,22 @@ function render(state) {
 }
 
 function animateToRectangle() {
-  let squarePoints = "M0,9L11 9 11 1.7 0 1.7z";
+  let squarePoints = "M0,9H11V1.7H0V9Z";
   pagerTriangle.animate({ d: squarePoints }, 1000, mina.easeinout);
 }
 function animateToTriangle() {
-  var triangles = ["M9.8,1.9L11,9.1L0.1,6.4L9.8,1.9z", "M11,8.1L1.7,11L0,0L11,8.1z", "M11,1.9L6.6,8.8L0,4L11,1.9z", "M11.1,10H0L5.8,1L11.1,10z", "M11,4.5l-5.2,6.3L0.1,1.2L11,4.5z", "M10.8,0.9L9.8,9.3L0.1,0.9H10.8z"];
+  var triangles = ["M9.8,1.9L11,9.1L0.1,6.4L9.8,1.9z", "M11,8.1L1.7,11L0,0L11,8.1z", "M11,1.9L6.6,8.8L0,4L11,1.9z", "M11.1,10H0L5.8,1L11.1,10z", "M11,4.5l-5.2,6.3L0.1,1.2L11,4.5z", "M10.8,0.9L9.8,9.3L0.1,0.9H10.8z", "M5.5,11l2.7-4.7L11,1.4H0L5.5,11z", "M5.5,1.4L2.81,6.1,0,11H11Z"];
     var e = 0;
-    for (let i = 0; i < pagerTriangle.length; i++) {
-      (i > 5) ? ((i === 6) ? e = 0 : ((i % 5 === 0) ? e = 0 : null)) : null;
-      pagerTriangle[i].animate({ d: triangles[e] }, 1000, mina.easeinout);
-      e++;
+    if (pagerTriangle.length > 25) {
+      for (let i = 0; i < pagerTriangle.length; i++) {
+        (i > 5) ? ((i === 6) ? e = 6 : ((i % 2 === 0) ? e = 6 : null)) : null;
+        pagerTriangle[i].animate({ d: triangles[e] }, 1000, mina.easeinout);
+        e++;
+      }
+    }
+    else if (pagerTriangle.length <= 6) {
+      for (let i = 0; i < pagerTriangle.length; i++) {
+        pagerTriangle[i].animate({ d: triangles[i] }, 1000, mina.easeinout);
+      }
     }
 }

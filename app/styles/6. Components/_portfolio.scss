@@ -1,24 +1,29 @@
 .section.two {
-  max-height: 100vh;
-  height: 100vh;
+
+  @include media($desktop) {
+    max-height: 100vh;
+    height: 100vh;
+
+    #projects-app {
+      height: 60%;
+    }
+  }
+
   .pager {
     filter:sepia(0.4) saturate(2.5) hue-rotate(-30deg) contrast(0.67);
-  }
-  #projects-app {
-    height: 60%;
   }
 }
 
 .portfolio {
-  height: 100%;
+  font-size: calc(16px + 0.10vw);
   position: relative;
-  // margin-right: -25%;
   transition: all 0.5s ease-out;
   transition-delay: 1s;
   padding-top: 2vw;
 
   @include media($desktop) {
     min-height: 50vh;
+    height: 100%;
   }
   @include media($desktoplarge) {
     padding: 3vw 15%;
@@ -26,19 +31,36 @@
 
 
   .project-image {
-    @include span-columns(5);
+    @include span-columns(12);
+    @include media($desktop) {
+      @include span-columns(5);
+    }
+    height: 100%;
+    position: relative;
     img {
+      @include media($desktop) {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      position: relative;
       max-height: 100%;
       max-width: 100%;
-      width: 100%;
+      display: block;
+      margin: 0 auto;
     }
   }
 
   .project-info {
-    @include span-columns(6.5);
-    @include shift(0.3);
+    @include span-columns(12);
+    @include media($desktop) {
+      padding-top: 0;
+      @include span-columns(6.5);
+      @include shift(0.3);
+    }
     height: 100%;
     position: relative;
+    padding-top: 1rem;
     padding-right: 3vw;
 
     h2 {
@@ -50,7 +72,7 @@
     }
     h3 {
       margin-top: -.8rem;
-      font-size: 1rem;
+      font-size: calc(16px + 0.10vw);
     }
     ul {
       padding-left: 1rem;
@@ -83,9 +105,7 @@
 }
 
 .pagination {
-  // overflow: hidden;
   animation: fadein 2s ease forwards;
-  // animation-delay: 1s;
   @include media($desktoplarge) {
     transform: scale(1.3);
   }
@@ -114,18 +134,38 @@
 }
 
 .pager {
-  @include span-columns(2.3);
+  @include span-columns(6);
+  @include omega(2n);
+
+  @include media($tablet) {
+    @include omega-reset(2n);
+    @include omega(3n);
+    @include span-columns(4);
+  }
+  @include media($desktop) {
+    @include omega-reset(3n);
+    @include span-columns(2.3);
+
+    &:nth-of-type(even) {
+      transform: scale(1.2);
+    }
+    &:nth-of-type(3) {
+      transform: scale(1.5);
+    }
+    &:nth-of-type(4) {
+      transform: scale(1.4);
+      @include shift(-0.4);
+    }
+    &:nth-of-type(n+4) {
+      margin-top: 6vw;
+    }
+    &:last-child {
+      @include shift(7);
+      margin-top: 4vw;
+    }
+  }
   cursor: pointer;
   opacity: 0.8;
-
-  &:nth-of-type(n+4) {
-    margin-top: 6vw;
-  }
-
-  &:last-child {
-    @include shift(7);
-    margin-top: 4vw;
-  }
 
   &:hover {
     position: relative;
@@ -140,23 +180,15 @@
       stroke-linecap: square;
     }
   }
-
-  &:nth-of-type(even) {
-    transform: scale(1.2);
-  }
-  &:nth-of-type(3) {
-    transform: scale(1.5);
-  }
-  &:nth-of-type(4) {
-    transform: scale(1.4);
-    @include shift(-0.4);
-  }
 }
 
 .portfolio-active {
   margin-right: 0;
   transition: none;
-  padding: 1vw 0 0;
+  padding: 5vw 0 0;
+  @include media($desktop) {
+    padding: 1vw 0 0;
+  }
   .pagination{
     transform: scale(1);
     animation: none;
@@ -207,32 +239,36 @@
 .pager {
   svg {
     max-width: 100%;
-    width: 200px;
-    height: 200px;
+    width: 100%;
     margin: 0 auto;
     display: block;
   }
 }
 
 .toggle {
-  @extend %vertical-align;
-  transform: translateY(-50%) scaleY(1.5);
-  position: absolute;
-  font-family: $exobold;
-  color: $spicy;
-  font-size: 2.5rem;
-  cursor: pointer;
-  transition: 0.2s color ease-out;
+  display: none;
 
-  &:hover {
-    color: $texasrose;
-  }
+  @include media($desktop) {
+    display: block;
+    @extend %vertical-align;
+    transform: translateY(-50%) scaleY(1.5);
+    position: absolute;
+    font-family: $exobold;
+    color: $spicy;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.2s color ease-out;
 
-  &.toggle-prev {
-    left: 0;
-  }
-  &.toggle-next {
-    right: 0;
+    &:hover {
+      color: $texasrose;
+    }
+
+    &.toggle-prev {
+      left: 0;
+    }
+    &.toggle-next {
+      right: 0;
+    }
   }
 }
 
