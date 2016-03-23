@@ -120,6 +120,4 @@ $(document).ready(function(){
 
 	// Simulate click on first dot to position
 	$dots.eq(0).click();
-
-	$('.lead-in').ClipPath();
 })
