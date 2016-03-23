@@ -1,0 +1,1 @@
+module.exports = require("npm:json2mq@0.2.0/index");

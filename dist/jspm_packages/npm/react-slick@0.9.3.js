@@ -1,0 +1,1 @@
+module.exports = require("npm:react-slick@0.9.3/lib");

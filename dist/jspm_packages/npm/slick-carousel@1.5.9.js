@@ -1,0 +1,1 @@
+module.exports = require("npm:slick-carousel@1.5.9/slick/slick");
