@@ -1,11 +1,11 @@
 .section.two {
 
   @include media($desktop) {
-    max-height: 100vh;
-    height: 100vh;
+    // max-height: 100vh;
+    // height: 100vh;
 
     #projects-app {
-      height: 60%;
+      // height: 60%;
     }
   }
 
@@ -113,7 +113,7 @@
 
 .detail {
   height: 100%;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .detail-enter {
@@ -144,7 +144,8 @@
   }
   @include media($desktop) {
     @include omega-reset(3n);
-    @include span-columns(2.3);
+    @include span-columns(6);
+    @include omega(2n);
 
     &:nth-of-type(even) {
       transform: scale(1.2);
@@ -250,7 +251,8 @@
 
   @include media($desktop) {
     display: block;
-    @extend %vertical-align;
+    position: absolute;
+    top: 50%;
     transform: translateY(-50%) scaleY(1.5);
     position: absolute;
     font-family: $exobold;

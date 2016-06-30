@@ -6,7 +6,7 @@ html, body {
 
 // Header Styles
 h1, h2 {
-	font-family: $chunkfive;
+	font-family: $rodina;
 	margin-top: 1.5rem;
 }
 
@@ -17,15 +17,15 @@ h3, h4, h5, h6 {
 
 .section .header {
 	> h2 {
-		font-size: calc(32px + 1vw);
-		margin-bottom: 0;
-		padding-bottom: .05rem;
+		font-size: calc(16px + 3vw);
+		margin-bottom: -0.3rem;
+		// padding-bottom: .05rem;
     display: inline-block;
 	}
 	> h3 {
 		margin-top: 0;
-		font-size: calc(22px + 0.5vw);
-		padding-top: .25rem;
+		font-size: calc(16px + 0.10vw);
+		// padding-top: .25rem;
 		display: inline-block;
 	}
 }

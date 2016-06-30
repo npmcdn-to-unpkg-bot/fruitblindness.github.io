@@ -58,7 +58,9 @@ $(document).ready(function(){
 
 	if (window.matchMedia("(min-width: 1100px)").matches) {
 
-		alignIntro();
+		setTimeout(function(){
+			alignIntro();
+		},500);
 
 		$(window).resize(function() {
 				if(this.resizeTO) clearTimeout(this.resizeTO);

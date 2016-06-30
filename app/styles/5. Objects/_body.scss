@@ -29,7 +29,7 @@
             }
 
             h2 {
-              border-bottom: .2vw solid $text-colour;
+              // border-bottom: .2vw solid $text-colour;
             }
         }
     }
@@ -53,12 +53,15 @@
     }
 
     @include media($desktop) {
-        min-height: 100vh;
         overflow: hidden;
         position: relative;
         width: 100%;
         padding: 2.2vw 8vw 3vw calc(150px + 3vw);
         min-height: 100vh;
-        max-height: 100vw;
+        
+        &:nth-of-type(n+2) {
+            min-height: 110vh;
+            max-height: 9999em;
+        }
     }
 }
