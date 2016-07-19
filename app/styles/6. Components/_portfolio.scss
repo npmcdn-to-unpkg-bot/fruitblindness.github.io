@@ -320,33 +320,33 @@
   }
 }
 
-.toggle {
-  display: none;
-
-  @include media($desktop) {
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%) scaleY(1.5);
-    position: absolute;
-    font-family: $exobold;
-    color: $spicy;
-    font-size: 2.5rem;
-    cursor: pointer;
-    transition: 0.2s color ease-out;
-
-    &:hover {
-      color: $texasrose;
-    }
-
-    &.toggle-prev {
-      left: 0;
-    }
-    &.toggle-next {
-      right: 0;
-    }
-  }
-}
+// .toggle {
+//   display: none;
+//
+//   @include media($desktop) {
+//     display: block;
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%) scaleY(1.5);
+//     position: absolute;
+//     font-family: $exobold;
+//     color: $spicy;
+//     font-size: 2.5rem;
+//     cursor: pointer;
+//     transition: 0.2s color ease-out;
+//
+//     &:hover {
+//       color: $texasrose;
+//     }
+//
+//     &.toggle-prev {
+//       left: 0;
+//     }
+//     &.toggle-next {
+//       right: 0;
+//     }
+//   }
+// }
 
 @keyframes fadein {
   0% {

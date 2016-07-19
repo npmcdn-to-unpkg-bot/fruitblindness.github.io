@@ -119,6 +119,7 @@ const actions = {
     }
   },
   setActive: function(id, instance) {
+    console.log(id, instance);
     var instanceName = instance.toString(),
     index = state[instanceName].map(function(el){
       return (
@@ -268,16 +269,19 @@ class Gallery extends React.Component {
       );
     });
 
+    var previousNode = activeNode == 0 ? paginationNodes.length - 1 : activeNode - 1,
+    nextNode = activeNode == paginationNodes.length - 1 ? 0 : activeNode + 1;
+
     if (state[instanceProp + "open"]) {
-      var galleryView = <div><Close instance={instanceProp} /><div className="prev"><ControlPrev instance={instanceProp} /></div><div className="featured-item">{paginationNodes[activeNode]}</div><div className="next"><ControlNext instance={instanceProp} /></div></div>;
+      var galleryView = <div className="gallery-view" key="gallery-active" ><Close instance={instanceProp} /><div className="prev"><ControlPrev instance={instanceProp} referenceNode={paginationNodes[previousNode].props} /></div><div className="featured-item">{paginationNodes[activeNode]}</div><div className="next"><ControlNext instance={instanceProp} referenceNode={paginationNodes[nextNode].props}  /></div></div>;
     }
     else {
-      var galleryView = <div className="pagination">{paginationNodes}</div>;
+      var galleryView = <div className="pagination" key="gallery-inactive">{paginationNodes}</div>;
     }
 
     return (
       <div className={classes}>
-        <ReactCSSTransitionGroup transitionName="detail" transitionEnterTimeout={500} transitionLeaveTimeout={300}>
+        <ReactCSSTransitionGroup transitionName="artOverlay" transitionEnterTimeout={800} transitionLeaveTimeout={100}>
           {galleryView}
         </ReactCSSTransitionGroup>
       </div>
@@ -313,7 +317,10 @@ class ControlPrev extends React.Component {
   }
   render() {
     return (
-      <div className="toggle-prev toggle" onClick={this.togglePrev.bind(this)}>&lt;</div>
+      <div className="toggle-prev toggle" onClick={this.togglePrev.bind(this)}>
+        <Clip imagePath={this.props.referenceNode.thumbnailImage} shape={this.props.referenceNode.shape} />
+        <span>&lt;</span>
+      </div>
     );
   }
 }
@@ -323,7 +330,10 @@ class ControlNext extends React.Component {
   }
   render() {
     return (
-      <div className="toggle-next toggle" onClick={this.toggleNext.bind(this)}>&lt;</div>
+      <div className="toggle-next toggle" onClick={this.toggleNext.bind(this)}>
+        <Clip imagePath={this.props.referenceNode.thumbnailImage} shape={this.props.referenceNode.shape} />
+        <span>&gt;</span>
+      </div>
     );
   }
 }

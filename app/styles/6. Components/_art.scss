@@ -29,6 +29,7 @@
   }
 
   .gallery-container--active {
+    animation: fadein 1s ease-out forwards;
     position: absolute;
     top: 0;
     left: 0;
@@ -42,12 +43,41 @@
     }
   }
 
+  .artOverlay-leave {
+    opacity: 0;
+  }
+
   .gallery-view {
+    // animation: fadein 2s ease-out forwards;
+    opacity: 1;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     height: inherit;
+    position: relative;
+
+    .prev, .next {
+      flex: 0.2 0 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .toggle {
+      color: $spicy;
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+
+      span {
+        transform: scaleY(1.5);
+        display: block;
+        font-size: 3.5rem;
+        font-family: $exobold;
+      }
+    }
 
     .close-button {
       color: $spicy;
@@ -72,6 +102,8 @@
 
     .featured-item {
       height: 100%;
+      flex-basis: 50%;
+      flex-grow: 0.8;
 
       > div {
         max-height: 100%;
@@ -97,6 +129,10 @@
          text-align: center;
          color: $texasrose;
          flex: 0 0;
+
+         h2 {
+           margin: 2rem 0 -0.2rem;
+         }
        }
     }
   }
