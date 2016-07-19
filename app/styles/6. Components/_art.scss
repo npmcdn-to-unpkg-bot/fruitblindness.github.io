@@ -1,114 +1,103 @@
 .section.three {
   @include media($desktop) {
-    max-height: 100vh;
-    height: 100vh;
+    // max-height: 100vh;
+    // height: 100vh;
     #art-app {
       height: 60%;
     }
   }
 
-  .portfolio {
-    @include media($desktop) {
+  .pagination {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .gallery__thumbnail {
+      flex: 0 1 29%;
+      padding: 1rem;
+
+      svg {
+        cursor: pointer;
+      }
+
+      &:nth-of-type(n+3) {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .gallery-container--active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding-left: 150px;
+    background: $cinder;
+
+    >span {
       height: 100%;
-      margin-right: -10%;
-      padding-top: 4.8vw;
     }
+  }
 
-    .pagination {
-      @include media($desktoplarge) {
-        transform: scale(1.2);
-      }
-    }
+  .gallery-view {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: inherit;
 
-    .pager {
-      filter:sepia(0.2) saturate(2) hue-rotate(-30deg) contrast(0.67);
-
-      @include span-columns(4);
-      @include omega-reset(2n);
-      @include omega(2n+1);
-
-      @include media($tablet) {
-        @include span-columns(2.4);
-        @include omega-reset(2n+1);
-        @include omega(5n);
-      }
-      @include media(min-width 480px max-width 1099px) {
-        &:last-child {
-          margin: 0 auto;
-          float: none;
-        }
-      }
-      @include media($desktop) {
-        @include span-columns(1.5);
-        @include omega-reset(5n);
-        transform: scale(1.2);
-        &:nth-of-type(n) {
-          margin-top: -2vw;
-        }
-        &:nth-of-type(odd) {
-          transform: scale(1.2);
-        }
-        &:nth-of-type(3n) {
-          transform: scale(1.2);
-        }
-        &:last-child {
-          @include shift(0);
-        }
-        &:nth-of-type(4) {
-          @include shift(0);
-        }
-        &:nth-of-type(n+8) {
-          margin-top: 4vw;
-        }
-      }
-      margin-top: 0;
-      animation: none;
-    }
-
-    .toggle, .close-button {
-      color: $tundora;
+    .close-button {
+      color: $spicy;
+      font-family: $exobold;
+      transform: scaleY(0.75);
+      appearance: none;
+      background: none;
+      border: none;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      font-size: 2.5rem;
+      transition: 0.2s color ease-out;
       &:hover {
-        color: $cinder;
+        color: $texasrose;
+      }
+      &:focus {
+        outline: none;
+        border: none;
       }
     }
 
-    &.portfolio-active {
-      margin-right: 0;
+    .featured-item {
+      height: 100%;
 
-      @include media($desktop) {
-        padding-top: 1vw;
+      > div {
+        max-height: 100%;
+        height: inherit;
       }
-      .pager {
-        transform: scale(1);
-        @include span-columns(2.4);
-        @include omega-reset(2n+1);
-        filter: none;
-        &.pager-active {
-          transform: scale(1.1);
-          opacity: 1;
-          position: relative;
-          z-index: 999;
-        }
+
+      .gallery__thumbnail > div {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
-      .pagination {
-        transform: scale(1);
-      }
-      .project-image {
-        @include media($desktop) {
-          @include span-columns(6);
-          img {
-            left: 50%;
-            transform: translate(-50%, -50%);
-          }
-        }
-      }
-      .project-info {
-        @include media($desktop) {
-          @include span-columns(5);
-          @include shift(0.5);
-          padding-top: 4vw;
-        }
-      }
+
+       img {
+         max-height: 80%;
+         max-width: 80%;
+         display: block;
+         margin: 0 auto;
+       }
+
+       .gallery__info {
+         text-align: center;
+         color: $texasrose;
+         flex: 0 0;
+       }
     }
   }
 }

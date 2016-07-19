@@ -139,7 +139,7 @@ if (typeof jQuery === 'undefined') {
       var dest=(active.index())*spacing;
 
       // Move active glob
-      TweenMax.to($current.data("pos"),0.6,{
+      TweenMax.to($current.data('pos'),0.6,{
         y:startPos+dest,
         onUpdate:updatePos,
         onComplete:updatePos,

@@ -1,7 +1,7 @@
 // Variable for static dots
-var $dots=$(".menu-item:not(.menu-item--blog)")
+var $dots=$('.menu-item:not(.menu-item--blog)')
 // movable glob
-,$current=$(".active")
+,$current=$('.active')
 
 
 // Variable to measue spacing between dots
@@ -27,7 +27,7 @@ function alignIntro() {
 }
 
 function updatePos(){
-	var pos=$current.data("pos").y-startPos;
+	var pos=$current.data('pos').y-startPos;
 	var scale=pos%spacing;
 	if(scale>halfSpacing){
 		scale=halfSpacing-(scale-halfSpacing);
@@ -49,14 +49,14 @@ Modernizr.addTest('firefox', function () {
 
 $(document).ready(function(){
 
-	$("a[href*='#']").click(function() {
-        $("html, body").animate({
-            scrollTop: $($.attr(this, "href")).offset().top
+	$('a[href*=\'#\']').click(function() {
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
         return false;
     })
 
-	if (window.matchMedia("(min-width: 1100px)").matches) {
+	if (window.matchMedia('(min-width: 1100px)').matches) {
 
 		setTimeout(function(){
 			alignIntro();
@@ -96,7 +96,7 @@ $(document).ready(function(){
 	});
 
 	// Reset active glob to startPos
-	$current.data("pos",{y:startPos});
+	$current.data('pos',{y:startPos});
 
 	//When dot clicked
 	// $dots.click(function(event){

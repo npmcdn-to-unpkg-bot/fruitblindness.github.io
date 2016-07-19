@@ -56,9 +56,9 @@
         overflow: hidden;
         position: relative;
         width: 100%;
-        padding: 2.2vw 8vw 3vw calc(150px + 3vw);
+        padding: 10vh 8vw 10vh calc(150px + 3vw);
         min-height: 100vh;
-        
+
         &:nth-of-type(n+2) {
             min-height: 110vh;
             max-height: 9999em;

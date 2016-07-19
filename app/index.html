@@ -16,16 +16,17 @@
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
-
-  <script src="jspm_packages/system.js"></script>
-  <script src="config.js"></script>
+  <script type="text/javascript" src="scripts/snap.js"></script>
+  <script type="text/javascript" src="jspm_packages/system.js"></script>
+  <script type="text/javascript" src="https://npmcdn.com/contentful@latest/browser-dist/contentful.min.js"></script>
+  <script type="text/javascript" src="config.js"></script>
   <!-- <script src="build.js"></script> -->
   <script>
     System.import('scripts/portfolio');
   </script>
 
   <!-- build:js scripts/vendor/modernizr.js -->
-  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <script type="text/javascript" src="/bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
 </head>
 
@@ -147,9 +148,7 @@
           <!-- endbuild -->
 
           <!-- build:js scripts/main.js -->
-          <script src="scripts/snap.js"></script>
           <script src="scripts/TweenMax.min.js"></script>
-          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.10/js/min/perfect-scrollbar.jquery.min.js"></script>
           <script src="scripts/main.js"></script>
           <script src="scripts/scrollspy.js"></script>
           <!-- endbuild -->

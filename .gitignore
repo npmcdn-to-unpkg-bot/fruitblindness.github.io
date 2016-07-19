@@ -9,3 +9,4 @@ coverage/
 *.swp
 bower_components/
 dist/
+jspm_packages/
