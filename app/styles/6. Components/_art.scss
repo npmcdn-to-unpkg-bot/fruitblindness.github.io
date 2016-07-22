@@ -1,18 +1,25 @@
 .section.three {
+  min-height: 110vh;
   @include media($desktop) {
     // max-height: 100vh;
-    // height: 100vh;
+
     #art-app {
-      height: 60%;
+      // height: 60%;
     }
   }
 
   .pagination {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
+
+    @include media($desktop) {
+      max-width: 1600px;
+      margin: 0 auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
 
     .gallery__thumbnail {
       flex: 0 1 29%;
@@ -35,8 +42,11 @@
     left: 0;
     bottom: 0;
     right: 0;
-    padding-left: 150px;
     background: $cinder;
+
+    @include media($desktop) {
+      padding-left: 150px;
+    }
 
     >span {
       height: 100%;
@@ -44,11 +54,12 @@
   }
 
   .artOverlay-leave {
-    opacity: 0;
+    animation: slideout 2s ease-out forwards;
   }
 
   .gallery-view {
     // animation: fadein 2s ease-out forwards;
+    padding: 0 2rem;
     opacity: 1;
     display: flex;
     flex-direction: row;

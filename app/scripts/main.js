@@ -22,7 +22,12 @@ function alignIntro() {
 		introParaOffset = introOffset - headerHeight;
 		offsetRecalc = menuOffset - introParaOffset;
 		if ($(document).scrollTop() <= 80) {
-			$('#section-one').css('padding-top', offsetRecalc);
+			if (window.matchMedia('(min-width: 1100px)').matches) {
+				$('#section-one').css('padding-top', offsetRecalc);
+			}
+			else {
+				$('#section-one').removeAttr('style');
+			}
 		}
 }
 

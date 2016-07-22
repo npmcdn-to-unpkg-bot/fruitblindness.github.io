@@ -210,7 +210,7 @@ class Project extends React.Component {
         </div>
         <div className="project-info">
           <h2>{this.props.title}</h2>
-          <h3>{this.props.subtitle}</h3>
+          <h3>Url: <a href={"http://href.li/?" + this.props.subtitle} target="_blank">{this.props.subtitle}</a></h3>
           {this.props.tags ? <Tags tags={this.props.tags} /> : null}
           <ReactCSSTransitionGroup transitionName="detail" transitionEnterTimeout={500} transitionLeaveTimeout={300}>
           {this.props.active ? expandedInfo : null}
@@ -295,7 +295,7 @@ class Gallery extends React.Component {
 class GalleryThumbnail extends React.Component {
   render() {
     if(this.props.active) {
-      var imageView =  <div><img src={this.props.fullImage} alt="placeholder" /><div className="gallery__info"><h2>{this.props.title}</h2><p>{this.props.media}</p></div></div>;
+      var imageView =  <div><img src={this.props.fullImage} alt="placeholder" /><div className="gallery__info"><h2>{this.props.title}</h2><p>{this.props.media}</p><div><a href={this.props.fullImage} className="expand-button" target="_blank">View in New Tab <svg viewBox="0 0 11 11"><use xlinkHref="images/arrow.svg#arrow"></use></svg></a></div></div></div>;
     }
     else {
       var imageView = <Clip imagePath={this.props.thumbnailImage} shape={this.props.shape} />;
@@ -355,10 +355,17 @@ class Tags extends React.Component {
 
 class ExpandButton extends React.Component {
   render() {
+    var classes = classNames({
+      "expand-button" : true,
+      "expand-button--active" : this.props.active
+    });
     return (
       <div>
-        <button onClick={this.toggleSlide.bind(this)} className="expand-button">
+        <button onClick={this.toggleSlide.bind(this)} className={classes}>
           {this.props.active ? "Close" : "View Details" }
+          <svg viewBox="0 0 11 11">
+            <use xlinkHref="images/arrow.svg#arrow"></use>
+          </svg>
         </button>
       </div>
     );
