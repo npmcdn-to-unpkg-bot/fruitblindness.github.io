@@ -1,1 +1,0 @@
-module.exports = require("npm:enquire.js@2.1.1/dist/enquire");
