@@ -119,7 +119,7 @@ const actions = {
     }
   },
   setActive: function(id, instance) {
-    console.log(id, instance);
+    // console.log(id, instance);
     var instanceName = instance.toString(),
     index = state[instanceName].map(function(el){
       return (
