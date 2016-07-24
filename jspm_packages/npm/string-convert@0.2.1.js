@@ -1,1 +1,0 @@
-module.exports = require("npm:string-convert@0.2.1/index");
