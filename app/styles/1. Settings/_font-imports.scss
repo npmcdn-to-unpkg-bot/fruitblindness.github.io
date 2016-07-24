@@ -1,6 +1,6 @@
 //Font Families
 
-$chunkfive : 'chunkfiveroman', Tahoma, sans-serif;
+$rodina : 'rodina', Tahoma, sans-serif;
 $exolight : 'exolight', arial, sans-serif;
 $exo: 'exoregular', arial, sans-serif;
 $exobold: 'exobold', arial, sans-serif;
@@ -8,12 +8,8 @@ $exobold: 'exobold', arial, sans-serif;
 
 
 @font-face {
-    font-family: 'chunkfiveroman';
-    src: url('../fonts/chunkfive-webfont.eot');
-    src: url('../fonts/chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/chunkfive-webfont.woff') format('woff'),
-         url('../fonts/chunkfive-webfont.ttf') format('truetype'),
-         url('../fonts/chunkfive-webfont.svg#chunkfiveroman') format('svg');
+    font-family: 'rodina';
+    src: url('../fonts/rodina-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 

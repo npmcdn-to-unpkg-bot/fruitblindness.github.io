@@ -95,7 +95,9 @@
         width: 2.5rem;
         height: 2.5rem;
         left: .5rem;
-        @extend %vertical-align;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
         z-index: 99;
       }
 
@@ -125,7 +127,7 @@
         display: block;
         background: $cinder;
         position: absolute;
-        top: -.66rem;
+        top: -.64rem;
         border-radius: 50%;
         width: 1.2rem;
         height: 1.3rem;
@@ -137,7 +139,7 @@
         display: block;
         background: $cinder;
         position: absolute;
-        top: -.66rem;
+        top: -.64rem;
         border-radius: 50%;
         width: 1.2rem;
         height: 1.3rem;
