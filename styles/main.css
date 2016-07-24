@@ -1646,7 +1646,7 @@ p.superscript {
 }
 
 .section.three .gallery-view .featured-item img {
-  max-height: 80%;
+  max-height: 70%;
   max-width: 80%;
   display: block;
   margin: 0 auto;
