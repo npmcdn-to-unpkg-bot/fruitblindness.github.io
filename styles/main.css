@@ -1495,6 +1495,11 @@ p.superscript {
   padding: 1rem;
 }
 
+.section.three .pager-item {
+  width: 100%;
+  max-width: 100%;
+}
+
 .section.three .pagination .gallery__thumbnail svg {
   cursor: pointer;
 }
